@@ -37,17 +37,17 @@
             let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             let day = weekday[date.getDay()];
 
-            if(hours < 12){
+            if(hours >= 5 && hours < 12){
                 say = "Good Morning! ";
                 document.body.style.backgroundColor = "yellow";
                 img.src = 'Images/morning.jpg';
                 
-            }else if(hours < 18){
+            }else if(hours >=12 && hours < 18){
                 say = "Good Afternoon! ";
                 document.body.style.backgroundColor = "red";
                 img.src = 'Images/afternoon.jpg';
     
-            }else if(hours < 23){
+            }else if(hours >= 18 && hours < 23){
                 say = "Good Evening! "
                 document.body.style.backgroundColor = "orange";
                 img.src = 'Images/eve.jpg';
